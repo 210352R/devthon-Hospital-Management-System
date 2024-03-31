@@ -1,0 +1,9 @@
+.landing {
+  border: 0px solid #000000;
+  background: linear-gradient(90deg, #0098b9, #003844);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  box-sizing: border-box;
+}
