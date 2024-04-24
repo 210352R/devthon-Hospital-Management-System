@@ -97,15 +97,15 @@ export default function Navbar() {
             </button>
           </div>
 
-          <div className="">
+          <div className="hidden sm:block">
             <SearchBar />
           </div>
         </div>
-        <div className="flex items-center align-middle col-span-2 mx-auto ">
+        <div className="flex items-center align-middle col-span-3 lg:col-span-2  mx-auto ">
           <div class="">
             <button
               type="button"
-              class="text-black bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-1 mt-0.5 text-center me-2 mb-2"
+              class="text-black bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm lg:px-5 sm:px-3 py-1 mt-0.5 text-center  mb-2 sm:justify-end"
             >
               Login / Register
             </button>
@@ -114,50 +114,52 @@ export default function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="right-0 mt-2 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-xl shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none lg:hidden">
-          <div className="py-1">
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              About Us
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Team
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Clinics
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Diagnostics
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
-            >
-              Donation
-            </a>
+        <div className="absolute z-10">
+          <div className="relative right-0 mt-2 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-xl shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none lg:hidden z-20">
+            <div className="py-1">
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Services
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Team
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Clinics
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Diagnostics
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-black"
+              >
+                Donation
+              </a>
+            </div>
           </div>
         </div>
       )}

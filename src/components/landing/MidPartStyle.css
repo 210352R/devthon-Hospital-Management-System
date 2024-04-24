@@ -1,0 +1,36 @@
+.about-us-btn {
+  overflow-wrap: break-word;
+  font-family: "Sansation";
+  font-weight: 800;
+  font-size: 24.3px;
+  color: #00738c;
+}
+
+.btn-container-mid-part {
+  box-shadow: -0.8px 3px 11.4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 11.4px;
+  background: #d9eff3;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5.3px 17.4px 4.6px 0;
+  width: 214px;
+  box-sizing: border-box;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-blink:hover {
+  animation: blink 3s infinite;
+}
